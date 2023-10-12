@@ -7,6 +7,6 @@ contract AccountKitToken is ERC20 {
     constructor() ERC20 ("AccountKitToken", "ACKT") {}
 
     function mint(address recipient) public {
-        _mint(recipient, 1.0 * 10 ^ decimals());
+        _mint(recipient, 1.0 * 10 ** decimals());
     }
 }
